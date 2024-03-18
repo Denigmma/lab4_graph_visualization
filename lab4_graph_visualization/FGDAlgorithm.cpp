@@ -29,7 +29,7 @@ void FDGDAlgorithm::initializeRandomPositions(std::vector<std::vector<double>>& 
 }
 
 void FDGDAlgorithm::computeForces(const std::vector<std::vector<int>>& A, const std::vector<std::vector<double>>& positions, std::vector<std::vector<double>>& forces, double k) {
-	double temp = 10.0 * std::sqrt(positions.size());
+	double temp =1.0;
 
 	for (size_t i = 0; i < positions.size(); ++i) {
 		for (size_t j = i + 1; j < positions.size(); ++j) {
